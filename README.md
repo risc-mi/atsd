@@ -33,9 +33,15 @@ The data set itself can be downloaded **[here](https://contentportal.asfinag.at/
 * **[Classification.ipynb](https://github.com/risc-mi/atsd/blob/main/Classification.ipynb)**
   shows how trained traffic sign classifiers can be applied to and
   evaluated on ATSD-Signs, including the necessary image pre-processing (resizing, scaling) steps.
-* Similar notebooks for traffic sign *detection* will be added soon.
+* A similar notebook for traffic sign *detection* will be added soon.
+* **[Evaluation.ipynb](https://github.com/risc-mi/atsd/blob/main/Evaluation.ipynb)** illustrates how results from
+  detection+classification pipelines can be evaluated w.r.t. ground truth annotations, in terms of per-class average
+  precision, mean average precision (mAP), etc.
 * **[weights](https://github.com/risc-mi/atsd/blob/main/weights)** contains trained weights of baseline classifiers.
   Weights of detectors will be added soon.
+* **[results](https://github.com/risc-mi/atsd/blob/main/results)** contains pre-computed results of baseline
+  detection+classification pipelines. See [Evaluation.ipynb](https://github.com/risc-mi/atsd/blob/main/Evaluation.ipynb)
+  for information on how to make use of them.
 
 ## The Data Set
 
@@ -94,7 +100,19 @@ models on the internal set, please get in touch with us by opening a GitHub issu
 
 ### Detection on ATSD-Scenes
 
-... will be added soon.
+| Name | Test | Test | Internal | Internal |
+|---|---|---|---|---|
+| | Categories | Classes | Categories | Classes |
+| Baseline* | 85.39&#177;2.33 | 87.87&#177;2.29 | 86.40&#177;3.44 | 89.30&#177;2.22 |
+
+*Baseline refers to the model architectures presented in
+[Classification.ipynb](https://github.com/risc-mi/atsd/blob/main/Classification.ipynb), with geometric+LED data
+augmentation as shown in
+[Classification_Preparation.ipynb](https://github.com/risc-mi/atsd/blob/main/Classification_Preparation.ipynb). Results
+are **mean average precision** (mAP), displayed as *mean*&#177;*SD* over three independent runs.
+
+Results in columns Categories refer to the detection+classification of categories 01 to 08. Results in columns Classes
+refer to the detection+classification of the 60 classes included in ATSD-Signs.
 
 ### Classification on ATSD-Signs
 
