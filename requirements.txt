@@ -4,3 +4,5 @@ numpy
 scikit-image
 pandas
 tqdm
+yolov4
+pillow

@@ -30,15 +30,19 @@ The data set itself can be downloaded **[here](https://contentportal.asfinag.at/
   shows how traffic sign images and related
   meta-data from ATSD-Signs can be loaded, analyzed and augmented with traffic-sign-specific augmentation methods.
   It forms the basis for subsequently training classification models, although the model training itself is not covered.
+* **[Detection_Preparation.ipynb](https://github.com/risc-mi/atsd/blob/main/Detection_Preparation.ipynb)**
+  shows how traffic scene images and related
+  meta-data from ATSD-Scenes can be loaded and converted to a YOLO/Darknet compatible format.
+  It forms the basis for subsequently training detection models, although the model training itself is not covered.
 * **[Classification.ipynb](https://github.com/risc-mi/atsd/blob/main/Classification.ipynb)**
   shows how trained traffic sign classifiers can be applied to and
   evaluated on ATSD-Signs, including the necessary image pre-processing (resizing, scaling) steps.
-* A similar notebook for traffic sign *detection* will be added soon.
+* **[Detection.ipynb](https://github.com/risc-mi/atsd/blob/main/Detection.ipynb)**
+  shows how trained traffic sign detectors can be applied to on the ATSD-Scenes.
 * **[Evaluation.ipynb](https://github.com/risc-mi/atsd/blob/main/Evaluation.ipynb)** illustrates how results from
   detection+classification pipelines can be evaluated w.r.t. ground truth annotations, in terms of per-class average
   precision, mean average precision (mAP), etc.
-* **[weights](https://github.com/risc-mi/atsd/blob/main/weights)** contains trained weights of baseline classifiers.
-  Weights of detectors will be added soon.
+* **[weights](https://github.com/risc-mi/atsd/blob/main/weights)** contains trained weights of baseline classifiers and detectors.
 * **[results](https://github.com/risc-mi/atsd/blob/main/results)** contains pre-computed results of baseline
   detection+classification pipelines. See [Evaluation.ipynb](https://github.com/risc-mi/atsd/blob/main/Evaluation.ipynb)
   for information on how to make use of them.
