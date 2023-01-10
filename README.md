@@ -133,8 +133,22 @@ are displayed as *mean*&#177;*SD* over three independent runs.
 
 ## References
 
-A citable research article describing the data set and the baseline models in this repository is currently in
-preparation.
+* Alexander Maletzky, Nikolaus Hofer, Stefan Thumfart, Karin Bruckmüller, and Johannes Kasper.
+  "Traffic Sign Detection and Classification on the Austrian Highway Traffic Sign Data Set". *Data* 8(1), 2023.
+  [DOI:10.3390/data8010016](https://doi.org/10.3390/data8010016)
+  ```
+  @article{ATSD_2023,
+    title = {Traffic Sign Detection and Classification on the {A}ustrian {H}ighway {T}raffic {S}ign {D}ata {S}et},
+    author = {Maletzky, Alexander and Hofer, Nikolaus and Thumfart, Stefan and Bruckm\"uller, Karin and Kasper, Johannes},
+    journal = {Data},
+    volume = {8},
+    number = {1},
+    year = {2023},
+    issn = {2306-5729},
+    url = {https://www.mdpi.com/2306-5729/8/1/16},
+    doi = {10.3390/data8010016}
+  }
+  ```
 
 ## Contact
 
