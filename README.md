@@ -14,6 +14,9 @@ augmenting the data set, and applying trained traffic sign detection- and classi
 Clone the repository and create a new environment from `requirements.txt`:
 ```
 # pip
+pip install virtualenv
+python -m virtualenv <env_name>
+<env_name>\Scripts\activate
 pip install -r requirements.txt
 
 # conda
@@ -153,3 +156,10 @@ are displayed as *mean*&#177;*SD* over three independent runs.
 ## Contact
 
 If you have any inquiries, please open a GitHub issue.
+
+## Acknowledgments
+
+This research was funded by [FFG (Austrian Research Promotion Agency) under grant 879320
+(SafeSign)](https://projekte.ffg.at/projekt/3789168) and financed by research subsidies granted by the government of
+Upper Austria.
+RISC Software GmbH is Member of UAR (Upper Austrian Research) Innovation Network.
